@@ -104,10 +104,8 @@
               "RelativeDocumentMoniker": "CleanArchMvc.WebUI\\appsettings.json",
               "ToolTip": "C:\\source\\Clean-Architecture\\CleanArchMvc\\CleanArchMvc.WebUI\\appsettings.json",
               "RelativeToolTip": "CleanArchMvc.WebUI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-07T01:05:48.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T01:05:48.241Z"
             },
             {
               "$type": "Document",
@@ -262,6 +260,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         },
