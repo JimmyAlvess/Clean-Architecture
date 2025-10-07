@@ -24,7 +24,7 @@ namespace CleanArchMvc.Domain.Test
             Assert.Equal(description, product.Description);
             Assert.Equal(price, product.Price);
             Assert.Equal(stock, product.Stock);
-            Assert.Equal(image, product.Image);
+            Assert.Equal(image, product.ImageUrl);
         }
 
         private void AssertValidationException<T>(Action action, string expectedMessage) where T : Exception
@@ -108,7 +108,7 @@ namespace CleanArchMvc.Domain.Test
         [InlineData("Macbook", "Macbook M1", 100.00, 5, null)]
         public void CreateProduct_WithInvalidImage_ThrowDomainExceptionValidation(string name, string description, decimal price, int stock, string image)
         {
-            AssertValidationForCreate(name, description, price, stock, image, "Invalid image. Image is required");
+            AssertValidationForCreate(name, description, price, stock, image, "Invalid image. ImageUrl is required");
         }
 
         [Fact]
@@ -185,7 +185,7 @@ namespace CleanArchMvc.Domain.Test
         [InlineData("Macbook", "Macbook M1", 100.00, 5, null, 1)]
         public void UpdateProduct_WithInvalidImage_ThrowDomainExceptionValidation(string name, string description, decimal price, int stock, string image, int categoryId)
         {
-            AssertValidationForUpdate(name, description, price, stock, image, categoryId, "Invalid image. Image is required");
+            AssertValidationForUpdate(name, description, price, stock, image, categoryId, "Invalid image. ImageUrl is required");
         }
 
         [Fact]

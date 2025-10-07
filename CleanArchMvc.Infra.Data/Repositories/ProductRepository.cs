@@ -45,7 +45,7 @@ namespace CleanArchMvc.Infra.Data.Repositories
                                      .SetProperty(p => p.Description, product.Description)
                                      .SetProperty(p => p.Price, product.Price)
                                      .SetProperty(p => p.Stock, product.Stock)
-                                     .SetProperty(p => p.Image, product.Image)
+                                     .SetProperty(p => p.ImageUrl, product.ImageUrl)
                                      .SetProperty(p => p.Category, product.Category));
             await _context.SaveChangesAsync();
             return product;

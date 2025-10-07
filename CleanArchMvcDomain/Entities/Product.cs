@@ -8,9 +8,12 @@ namespace CleanArchMvc.Domain.Entities
         public string Description { get; private set; }
         public decimal Price { get; private set; }
         public int Stock { get; private set; }
-        public string Image { get; private set; } 
-        public int CategoryId { get;  set; }
-        public Category Category { get;  set; } 
+        public string ImageUrl { get; private set; } 
+        public int CategoryId { get; set; }
+        public Category Category { get; set; } 
+
+        // Construtor sem parâmetros para o Entity Framework
+        public Product() { }
 
         public Product(string name, string description, decimal price, int stock, string image)
         {
@@ -45,7 +48,7 @@ namespace CleanArchMvc.Domain.Entities
             Description = description;
             Price = price;
             Stock = stock;
-            Image = image;
+            ImageUrl = image;
         }
     }
 }

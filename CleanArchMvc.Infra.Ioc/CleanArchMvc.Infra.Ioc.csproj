@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="15.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CleanArchMvc.Infra.Data\CleanArchMvc.Infra.Data.csproj" />
     <ProjectReference Include="..\CleanArchMvcApplication\CleanArchMvcApplication.csproj" />
     <ProjectReference Include="..\CleanArchMvcDomain\CleanArchMvcDomain.csproj" />

@@ -16,28 +16,28 @@ namespace CleanArchMvc.Infra.Data.Repositories
 
         public async Task<Category> GetById(int? id)
         {
-            return await _context.categories.FindAsync(id);
+            return await _context.Categories.FindAsync(id);
         }
         public async Task<IEnumerable<Category>> GetCategoriesAsync()
         {
-            return await _context.categories.ToListAsync();
+            return await _context.Categories.ToListAsync();
         }
         public async Task<Category> CreateCategoryAsync(Category category)
         {
-            await _context.categories.AddAsync(category);
+            await _context.Categories.AddAsync(category);
             await _context.SaveChangesAsync();
             return category;
         }
         public async Task<Category> DeleteCategoryAsync(Category category)
         {
-            _context.categories.Remove(category);
+            _context.Categories.Remove(category);
             await _context.SaveChangesAsync();
             return category;
         }
 
         public async Task<Category> UpdateCategoryAsync(Category category)
         {
-            _context.categories.Update(category);
+            _context.Categories.Update(category);
             await _context.SaveChangesAsync();
             return category;
 
