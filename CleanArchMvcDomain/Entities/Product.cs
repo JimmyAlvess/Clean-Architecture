@@ -12,7 +12,6 @@ namespace CleanArchMvc.Domain.Entities
         public int CategoryId { get; set; }
         public Category Category { get; set; } 
 
-        // Construtor sem parâmetros para o Entity Framework
         public Product() { }
 
         public Product(string name, string description, decimal price, int stock, string image)

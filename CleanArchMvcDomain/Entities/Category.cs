@@ -7,7 +7,6 @@ namespace CleanArchMvc.Domain.Entities
         public string Name { get; private set; }
         public ICollection<Product> Products { get; private set; } = new List<Product>();
 
-        // Construtor sem parâmetros para o Entity Framework
         public Category() { }
 
         public Category(string name)
